@@ -8,8 +8,11 @@ const BhIdoloDoMengao = () => {
 
   return (
     <ScrollView>
+      <View>
+         
+      </View>
       <View style={styles.container}>
-        
+
         <Text style={styles.tituloPrincipal}>Curiosidades sobre Bruno Henrique</Text>
 
         <Text style={styles.info}>
@@ -44,7 +47,8 @@ const BhIdoloDoMengao = () => {
         />
 
         <Image
-          source={{ uri: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKJO2p92VOW6Cy9jUfxJEXTm9P-OelSDtD5A&s' }}
+          s
+          ource={{ uri: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKJO2p92VOW6Cy9jUfxJEXTm9P-OelSDtD5A&s' }}
           style={styles.imagem}
         />
 
