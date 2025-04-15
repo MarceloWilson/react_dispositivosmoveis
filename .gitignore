@@ -1,0 +1,87 @@
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Build
+dist/
+build/
+out/
+coverage/
+
+# React Native / Android / iOS
+android/.gradle/
+android/app/build/
+ios/Pods/
+ios/build/
+*.xcworkspace
+*.xcodeproj
+*.pbxproj
+*.xcuserstate
+*.xcuserdata
+*.DS_Store
+
+# VSCode
+.vscode/
+.history/
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Logs
+*.log
+logs/
+*.pid
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Cache
+.cache/
+.tmp/
+temp/
+*.tmp
+*.swp
+
+# Expo
+.expo/
+.expo-shared/
+
+# IDEs
+.idea/
+*.iml
+
+# Test coverage
+coverage/
+.nyc_output/
+
+# Binaries
+*.exe
+*.dll
+*.so
+*.dylib
+*.pyc
+*.class
+
+# Others
+*.zip
+*.tar
+*.gz
+*.7z
+
+node_modules/
+.expo/
+build/
+dist/
+*.log
+.env
+
