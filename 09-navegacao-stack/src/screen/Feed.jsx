@@ -3,6 +3,10 @@ import React from 'react'
 import { Button } from 'react-native-paper'
 
 export default function Feed({navigation, route}) {
+  
+  console.log("PARAMS =>", route.params)
+
+
   return (
     <View>
       <Text>Feed</Text>

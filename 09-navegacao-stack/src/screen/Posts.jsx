@@ -7,17 +7,6 @@ export default function Posts({navigation, route}) {
     <View>
       <Text>Posts</Text>
 
-
-
-
-
-      <Button
-      mode = 'contained' 
-      onPress={() => navigation.navigate('Feed')} 
-      >
-        Ir para o feed
-        </Button>
-
         
       <Button
       mode = 'contained'

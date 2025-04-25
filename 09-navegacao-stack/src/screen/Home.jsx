@@ -9,7 +9,7 @@ export default function Home({navigation, route}) {
 
       <Button
       mode='contained'
-      onPress={() => navigation.navigate('Feed')}
+      onPress={() => navigation.navigate('Feed', {id: 1, name: 'Lucas'})}
       >
         Ir para o Feed
       </Button>
