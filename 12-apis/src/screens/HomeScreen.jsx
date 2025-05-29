@@ -3,11 +3,14 @@ import React, { useEffect, useState } from 'react'
 import { Card, Avatar, IconButton, ActivityIndicator, Text } from 'react-native-paper'
 import axios from 'axios'
 import { FlatList } from 'react-native-gesture-handler'
+import { useNavigation } from '@react-navigation/native'
 
 export default function HomeScreen() {
 
   const [usuarios, setUsuarios] = useState([])
   const [loading, setLoading] = useState(true)
+
+  const navigation = useNavigation()
 
   useEffect(() => {
     axios.get('https://dummyjson.com/users?delay=3000')
@@ -35,7 +38,10 @@ export default function HomeScreen() {
           data={usuarios}
           keyExtractor={(item) => item.id.toString()}
           renderItem={({ item }) => (
-            <Card style={{ marginVertical: 8 }}>
+            <Card 
+              style={{ marginVertical: 8 }} 
+              onPress={() => navigation.navigate('UsuarioScreen', { usuario: item })}
+            >
               <Card.Title
                 title={`${item.firstName} ${item.lastName}`}
                 subtitle={item.email}
